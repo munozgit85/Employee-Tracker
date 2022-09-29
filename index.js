@@ -1,4 +1,4 @@
-const db = require('./db/connection.js');
+const db = require('./db/connection');
 const startMenu = require('./routes/apiRoutes/inquire');
 
 db.connect(err => {
