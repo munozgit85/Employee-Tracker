@@ -1,4 +1,4 @@
-const db = require('../db/connection.js');
+const db = require('../../db/connection');
 
 const employeeByManager = `
 SELECT e.id, e.first_name, e.last_name, roles.title AS role, departments.name AS department, roles.salary AS salary, CONCAT_WS(' ', m.first_name, m.last_name) AS manager

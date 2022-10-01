@@ -23,7 +23,7 @@ const { employeeByManager,
 
 
 
-const db = require('../db/connection.js');
+const db = require('../../db/connection');
 
 const startMenu = () => {
     return inquirer.prompt([
