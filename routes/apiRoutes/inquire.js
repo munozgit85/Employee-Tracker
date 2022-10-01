@@ -16,7 +16,7 @@ const { employeeByManager,
         employeeByDepartment, 
         employeeName, 
         employeeInsert, 
-        employeeUpdatePrompt, 
+        employeeupdateName, 
         employeeUpdateReturn, 
         employeeDelete, 
         employeeDeleteName} = require('../apiRoutes/employeeRoutes');    
@@ -60,7 +60,7 @@ const startMenu = () => {
         if (menu === 'Add a department') {add(departmentName, departmentInsert)}
         if (menu === 'Add a role') {add(roleName, roleInsert)}
         if (menu === 'Add an employee') {add(employeeName, employeeInsert)}
-        if (menu === 'Update an employee role') {update(employeeUpdatePrompt, employeeUpdateReturn)}
+        if (menu === 'Update an employee role') {update(employeeupdateName, employeeUpdateReturn)}
         if (menu === 'Remove a department') {remove(departmentDelete, departmentDeleteName)}
         if (menu === 'Remove a role') {remove(roleDelete, roleDeleteName)}
         if (menu === 'Remove an employee') {remove(employeeDelete, employeeDeleteName)}
