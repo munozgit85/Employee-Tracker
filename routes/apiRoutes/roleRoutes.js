@@ -23,7 +23,7 @@ const  roleName = [
         type: 'list',
         name: 'department',
         message: 'Choose the department for this role.',
-        choices: ['Respiratory', 'Laboratory', 'Medicine', 'Nursing', 'Administrative']
+        choices: ['Facilities','Laboratory','Medicine','Nursing','Administrative']
     }
 ];
 
@@ -38,7 +38,7 @@ const roleInsert = (({ roleName, salary, department }) => {
         type: 'list',
         name: 'deleteRole',
         message: 'Which role would you like to remove?',
-        choices: ['Nurse', 'Physician', 'Respiratory Therapist','Director', 'Chief Nursing Officer', 'Lab Technician', 'Chief Medical Officer', 'Nurse Manager']
+        choices: ['Janitor', 'Facilities Director', 'Lab Technician','Microbiologist', 'Physician', 'Pathologist', 'Nurse', 'Nurse Manager', 'Director of Finance','Chief Quality Officer']
     }
 ];
 

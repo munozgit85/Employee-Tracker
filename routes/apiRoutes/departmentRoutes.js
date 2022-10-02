@@ -28,7 +28,7 @@ departmentDelete = [
         type: 'list',
         name: 'deleteDepartment',
         message: 'Choose the department that you would like to remove?',
-        choices: ['Sales', 'Engineering', 'Finance', 'Legal', 'Human Resources']
+        choices: ['Facilities', 'Laboratory','Medicine','Nursing', 'Administrative']
     }
 ];
 

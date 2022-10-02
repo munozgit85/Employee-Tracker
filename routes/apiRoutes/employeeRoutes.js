@@ -31,7 +31,7 @@ const  employeeName = [
         type: 'list',
         name: 'role',
         message: "What is the employee's role?",
-        choices: ['Nurse', 'Physician', 'Respiratory Therapist','Director', 'Chief Nursing Officer', 'Lab Technician', 'Chief Medical Officer', 'Nurse Manager']
+        choices: ['Janitor', 'Facilities Director', 'Lab Technician','Microbiologist', 'Physician', 'Pathologist', 'Nurse', 'Nurse Manager', 'Director of Finance','Chief Quality Officer']
     },
     {
         type: 'confirm',
@@ -43,7 +43,7 @@ const  employeeName = [
         type: 'list',
         name: 'manager',
         message: "Who is the employee's manager?",
-        choices: ['Jackie Chapman', 'Evadney Ramsook', 'Zach Munoz', 'Sebastian Sherfey', 'Shane James'],
+        choices: ['Marlene McClennan', 'Michael Gifts', 'Shree Kuwas', 'Eva Ladd', 'Samuel Reid'],
         when: ({ confirmManager }) => {
             if (confirmManager) {
                 return true;
@@ -95,7 +95,7 @@ const employeeupdateName = [
         type: 'list',
         name: 'newRole',
         message: 'What is their new role?',
-        choices: ['Nurse', 'Physician', 'Respiratory Therapist','Director', 'Chief Nursing Officer', 'Lab Technician', 'Chief Medical Officer', 'Nurse Manager']
+        choices: ['Janitor', 'Facilities Director', 'Lab Technician','Microbiologist', 'Physician', 'Pathologist', 'Nurse', 'Nurse Manager', 'Director of Finance','Chief Quality Officer']
     },
     {
         type: 'confirm',
@@ -107,7 +107,7 @@ const employeeupdateName = [
         type: 'list',
         name: 'newManager',
         message: "Who is the employee's new manager?",
-        choices: ['Jackie Chapman', 'Evadney Ramsook', 'Zach Munoz', 'Sebastian Sherfey', 'Shane James'],
+        choices: ['Marlene McClennan', 'Michael Gifts', 'Shree Kuwas', 'Eva Ladd', 'Samuel Reid'],
         when: ({ confirmUpdateManager }) => {
             if (confirmUpdateManager) {
                 return true;
