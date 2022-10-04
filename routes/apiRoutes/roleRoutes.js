@@ -1,6 +1,6 @@
 const db = require('../../db/connection');
 
-const roleSelect = `SELECT roles.id, roles.title, roles.salary, departments.name
+const allRole = `SELECT roles.id, roles.title, roles.salary, departments.name
 AS department
 FROM roles
 LEFT JOIN departments
@@ -49,7 +49,7 @@ roleDeleteName = (({ deleteRole }) => {
 });
 
 module.exports = {
-    roleSelect,
+    allRole,
      roleName,
     roleInsert,
      roleDelete,
