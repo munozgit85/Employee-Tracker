@@ -8,7 +8,7 @@ VALUES
 
 
 
-INSERT INTO roles (title, salary, department_id)
+INSERT INTO roles (title, salary, departments_id)
 VALUES
 
 ('Janitor', 65000, 1),

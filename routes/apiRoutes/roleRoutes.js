@@ -4,7 +4,7 @@ const allRole = `SELECT roles.id, roles.title, roles.salary, departments.name
 AS department
 FROM roles
 LEFT JOIN departments
-ON roles.department_id = departments.id`;
+ON roles.department_id = department.id`;
 
 
 
@@ -28,7 +28,7 @@ const  roleName = [
 ];
 
 const roleInsert = (({ roleName, salary, department }) => {
-    const sql = `INSERT INTO roles (title, salary, department_id) VALUES (?, ?, (SELECT id FROM departments WHERE name = ?))`;
+    const sql = `INSERT INTO roles (title, salary, department_id) VALUES (?, ?, (SELECT MAX(id) FROM departments))`;
     const params = [roleName, salary, department];
     db.query(sql, params);
 });

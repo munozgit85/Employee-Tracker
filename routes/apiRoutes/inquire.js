@@ -64,8 +64,9 @@ const startMenu = () => {
 }
 
 const viewAll = (viewAllTable) => {
-    db.query(viewAllTable, (err, result) => console.table(result));
+    db.query(viewAllTable, (err, result) => console.table(result))
     setTimeout(startMenu, 1000);
+   
 }
 
 const add = (inquireQuestions, insertSql) => {
